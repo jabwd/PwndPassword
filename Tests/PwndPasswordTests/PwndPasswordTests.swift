@@ -1,4 +1,5 @@
 import XCTest
+import Dispatch
 @testable import PwndPassword
 
 class PwndPasswordTests: XCTestCase {

@@ -3,6 +3,10 @@
 An easy to use Swift library for validating passwords against
 the awesome pwnedpasswords.com API.
 
+## Requirements
+
+A box that runs the Swift4.0 toolchain.
+
 ## Usage
 ```
 let password = PwndPassword()
