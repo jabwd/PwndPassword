@@ -2,16 +2,10 @@ import CryptoSwift
 import Foundation
 import SwiftyRequest
 
-public typealias PasswordValidationCallback = (Int) -> Void
+public typealias PasswordValidationCallback = (matches: Int) -> Void
 
 public class PwndPassword {
-	
-	init() {
-	}
-	
-	deinit {
-	}
-	
+
 	///
 	/// Checks https://api.pwnedpasswords.com for known breaches of the given password
 	/// The callback returns -1 on error, 0 for none found and a count for passwords

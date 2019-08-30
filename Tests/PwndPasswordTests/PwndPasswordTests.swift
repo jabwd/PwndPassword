@@ -11,16 +11,13 @@ class PwndPasswordTests: XCTestCase {
 		group.enter()
 		DispatchQueue.global().async {
 			let password = PwndPassword()
-			password.validate(password: "somePassword") {
+			password.validate(password: "correct horse battery staple") {
 				result in
-				print("Validation result: \(result)")
+                XCTAssert(result >= 3)
 				group.leave()
 			}
 		}
 		group.wait()
-		
-		XCTAssert(true)
-        //XCTAssertEqual(PwndPassword().text, "Hello, World!")
     }
 
 
